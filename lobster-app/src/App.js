@@ -95,10 +95,7 @@ In the end, we will reveal their own "secret random" number, add it to the total
           </div>
         </section>{/* End Credits */}
           
-        <div> 
-          <object type="text/html" data="https://pool.pm/22ab39540db22349b1934f5dcb7788440c33709ea9fdac07fb343395" style="overflow:auto;">
-          </object>
-        </div>
+
       </main>
   );
 }
