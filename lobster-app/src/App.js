@@ -73,11 +73,24 @@ In the end, we will reveal their own "secret random" number, add it to the total
               </p>
             </div>
           </div>
+          <div className="grid gap-4 md:gap-10 lg:grid-cols-3">
+            <div>
+              <h2 className="text-2xl md:text-3xl font-semibold">Credits</h2>
+            </div>
+            <div className="lg:col-span-2 text-base md:text-lg">
+              <p>This fun SPA is brought to you by a new SPO!</p>
+              <p>We are an independent Cardano Stake Pool Operator and we are on a mission to run and grow the Earth’s most advanced, 3rd generation blockchain platform, one node at a time…</p>
+              <p>Our ticker: ADACT, our pool ID: 22ab39540db22349b1934f5dcb7788440c33709ea9fdac07fb343395</p>
+              <p>Please support us by delegating your spare ADA :)</p>
+              <br/>
+              <div> 
+                <object type="text/html" data="https://pool.pm/22ab39540db22349b1934f5dcb7788440c33709ea9fdac07fb343395" style="overflow:auto;border:5px ridge black">
+                </object>
+              </div>
+            </div>
+          </div>
         </section>{/* End About App */}
-
-
         
-
       </main>
   );
 }
