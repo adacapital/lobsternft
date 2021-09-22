@@ -91,7 +91,7 @@ In the end, we will reveal their own "secret random" number, add it to the total
                 <br/>
                 <p>Please support us by delegating your spare ADA :)</p>
                 <br/>
-                <object type="text/html" data="https://pool.pm/22ab39540db22349b1934f5dcb7788440c33709ea9fdac07fb343395" style="overflow:auto;border:5px ridge black"></object>
+                <embed type="text/html" src="https://pool.pm/22ab39540db22349b1934f5dcb7788440c33709ea9fdac07fb343395" width="500" height="900">
               </div>
           </div>
         </section>{/* End Credits */}
