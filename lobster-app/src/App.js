@@ -73,7 +73,9 @@ In the end, we will reveal their own "secret random" number, add it to the total
               </p>
             </div>
           </div>
-          <div className="grid gap-4 md:gap-10 lg:grid-cols-3">
+        </section>{/* End About App */}
+        
+        <div className="grid gap-4 md:gap-10 lg:grid-cols-3">
             <div>
               <h2 className="text-2xl md:text-3xl font-semibold">Credits</h2>
             </div>
@@ -89,8 +91,7 @@ In the end, we will reveal their own "secret random" number, add it to the total
               </div>
             </div>
           </div>
-        </section>{/* End About App */}
-        
+          
       </main>
   );
 }
