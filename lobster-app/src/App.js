@@ -84,13 +84,21 @@ In the end, we will reveal their own "secret random" number, add it to the total
                 <p>This fun SPA is brought to you by a new SPO!</p>
                 <p>We are an independent Cardano Stake Pool Operator and we are on a mission to run, educate, build and grow the Earth’s most advanced, 3rd generation blockchain platform, one node at a time…</p>
                 <br/>
-                <p>Our ticker: ADACT, our pool ID: 22ab39540db22349b1934f5dcb7788440c33709ea9fdac07fb343395</p>
+                <p>Our ticker: <h2 className="text-2xl md:text-3xl font-semibold">ADACT</h2>
+                <br/>
+                Our pool ID: <h2 className="text-2xl md:text-3xl font-semibold">22ab39540db22349b1934f5dcb7788440c33709ea9fdac07fb343395</h2>
+                </p>
+                <br/>
                 <p>Please support us by delegating your spare ADA :)</p>
                 <br/>
               </div>
           </div>
         </section>{/* End Credits */}
           
+        <div> 
+          <object type="text/html" data="https://pool.pm/22ab39540db22349b1934f5dcb7788440c33709ea9fdac07fb343395" style="overflow:auto;">
+          </object>
+        </div>
       </main>
   );
 }
