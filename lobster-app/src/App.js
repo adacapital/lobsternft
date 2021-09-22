@@ -43,7 +43,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="sm:block sm:absolute bottom-6 sm:inset-x-1/2 invisible xl:visible">
+          <div className="hidden sm:block sm:absolute bottom-6 sm:inset-x-1/2 invisible xl:visible">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
             </svg>
