@@ -14,7 +14,7 @@ function App() {
             <div className="xl:h-full grid gap-y-8 sm:gap-y-0 sm:gap-x-10 sm:grid-cols-2 mt-32 xl:mt-auto content-center">
               <div className="sm:col-span-1 space-y-3 md:space-y-2 xl:space-y-12">
                 <h1 className="text-4xl sm:text-4xl xl:text-7xl font-semibold">Every lobster should have a name. Would you agree?</h1>
-                <p className="max-w-sm text-lg md:text-2xl">Please help us in giving a name to Charles' crustacean mascot!</p>
+                <p className="max-w-sm text-lg md:text-2xl">Please help us give a name to Charles' crustacean mascot!</p>
                 <div className="space-y-4">
                   {/* <a href="#"><img className="shadow rounded-lg transition duration-200 ease-in-out transform hover:-translate-y-1 hover:shadow-lg" src="assets/img/apple-store-white-button.svg" alt="" /></a>
                   <a href="#"><img className="shadow rounded-lg transition duration-200 ease-in-out transform hover:-translate-y-1 hover:shadow-lg" src="assets/img/google-play-white-button.svg" alt="" /></a> */}
@@ -37,9 +37,6 @@ function App() {
                 }>
                 </NftStatus>
                 </div>
-                
-                
-
               </div>
               <div className="grid justify-items-center">
                 <img className="sm:absolute sm:-right-32 md:-right-16 lg:right-0 bottom-0 w-2/3 sm:w-2/4 lg:w-2/5" src={lobsterResource} alt="" />
@@ -75,7 +72,27 @@ In the end, we will reveal their own "secret random" number, add it to the total
           </div>
         </section>{/* End About App */}
         
-
+        <section className="container mx-auto px-5 py-12 lg:py-28 ">{/* Start Credits */}
+          <div className="grid gap-4 md:gap-10 lg:grid-cols-3">
+              <div>
+                <h2 className="text-2xl md:text-3xl font-semibold">Credits</h2>
+              </div>
+              <div className="lg:col-span-2 text-base md:text-lg">
+                <p>This fun SPA is brought to you by a new SPO!</p>
+                <p>We are an independent Cardano Stake Pool Operator and we are on a mission to run, educate, build and grow the Earth’s most advanced, 3rd generation blockchain platform, one node at a time…</p>
+                <br/>
+                <p>Our ticker: <h2 className="text-2xl md:text-3xl font-semibold">ADACT</h2>
+                <br/>
+                Our pool ID: <h2 className="text-2xl md:text-3xl font-semibold">22ab39540db22349b1934f5dcb7788440c33709ea9fdac07fb343395</h2>
+                </p>
+                <br/>
+                <p>Please support us by delegating your spare ADA :)</p>
+                <br/>
+                <embed type="text/html" src="https://pool.pm/22ab39540db22349b1934f5dcb7788440c33709ea9fdac07fb343395" width="500" height="900"/>
+              </div>
+          </div>
+        </section>{/* End Credits */}
+        
       </main>
   );
 }
