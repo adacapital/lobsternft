@@ -1,6 +1,6 @@
 import lobsterResource from './assets/img/lobster.svg';
 import lobsterSadHappyResource from './assets/img/LobsterSadAndHappy.gif';
-import lobsterHappyResource from './assets/img/LobsterdHappy.gif';
+import lobsterHappyResource from './assets/img/LobsterHappy.gif';
 import ProgressBar from './ProgressBar';
 import React from 'react';
 import { NftStatus } from './NftStatus';
