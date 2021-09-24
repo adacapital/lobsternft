@@ -7,8 +7,8 @@ import { NftStatus } from './NftStatus';
 
 function App() {
   return (
-    <main className="bg-gray-800 text-white">
-        <div className="xl:h-screen bg-black overflow-hidden relative">{/* Start Hero */}
+    <main className="bg-gray-900 text-white">
+        <div className="xl:h-screen bg-gray-900 overflow-hidden relative">{/* Start Hero */}
           <div className="sm:h-96 xl:h-full container mx-auto px-5">
             <div className="absolute top-8">
               {/* <a href="#"><img src={logo} alt="" /></a> */}
