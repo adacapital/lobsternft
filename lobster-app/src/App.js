@@ -31,17 +31,20 @@ function App() {
                         </div>
                         <span>{x.progressDisplay}</span>
                       </div>
-                      {x.estimatedName && <div className="flex justify-start space-x-2">
-                          If voting would complete right now, my name would be:  {x.estimatedName}
+                      {/* {x.estimatedName && <div className="flex justify-start space-x-2">
+                          Thank you all for voting, my name is:  {x.estimatedName}
                         
-                      </div>}
+                      </div>} */}
+                      <div className="flex justify-start space-x-2">
+                          Thank you all for voting, my name is:  <h2 className="text-2xl md:text-3xl font-semibold text-red-600">THOMAS</h2>
+                      </div>
                     </React.Fragment>
                 }>
                 </NftStatus>
                 </div>
               </div>
               <div className="grid justify-items-center">
-                <img className="sm:absolute sm:-right-32 md:-right-16 lg:right-0 bottom-0 w-2/3 sm:w-2/4 lg:w-2/5" src={lobsterSadHappyResource} alt="" />
+                <img className="sm:absolute sm:-right-32 md:-right-16 lg:right-0 bottom-0 w-2/3 sm:w-2/4 lg:w-2/5" src={lobsterHappyResource} alt="" />
               </div>
             </div>
           </div>
@@ -68,7 +71,7 @@ We need 500 Community members who are willing to help name the lobster by creati
 In the end, we will reveal their own "secret random" number, add it to the total provided by the Community, and use the result (after taking the remainder after division by the number of available names) as an index into the list of names to pick the lobster name.
               </p>
               <p className="pt-2">
-                More info on IOHK's <a className="text-red-300" href="https://github.com/input-output-hk/lobster-challenge" target="_blank" rel="noopener noreferrer">Github</a>.
+                More info on IOHK's <a className="text-red-600" href="https://github.com/input-output-hk/lobster-challenge" target="_blank" rel="noopener noreferrer">Github</a>.
               </p>
             </div>
           </div>
@@ -83,9 +86,9 @@ In the end, we will reveal their own "secret random" number, add it to the total
                 <p>This fun SPA is brought to you by a new SPO!</p>
                 <p>We are an independent Cardano Stake Pool Operator and we are on a mission to run, educate, build and grow the Earth’s most advanced, 3rd generation blockchain platform, one node at a time…</p>
                 <br/>
-                <p>Our ticker: <h2 className="text-2xl md:text-3xl font-semibold">ADACT</h2>
+                <p>Our ticker: <h2 className="text-2xl md:text-3xl font-semibold text-red-600">ADACT</h2>
                 <br/>
-                Our pool ID: <h2 className="text-2xl md:text-3xl font-semibold">22ab39540db22349b1934f5dcb7788440c33709ea9fdac07fb343395</h2>
+                Our pool ID: <h2 className="text-2xl md:text-3xl font-semibold text-red-600">22ab39540db22349b1934f5dcb7788440c33709ea9fdac07fb343395</h2>
                 </p>
                 <br/>
                 <p>Please support us by delegating your spare ADA :)</p>
