@@ -1,7 +1,7 @@
 html, body, #root {
     height: 100%;
     /* background-color: black; */
-    background-color: rgb(49, 49, 49);
+    background-color: rgb(105, 64, 64);
 } 
 @tailwind base;
 @tailwind components;
