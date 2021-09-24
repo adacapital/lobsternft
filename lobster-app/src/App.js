@@ -98,6 +98,23 @@ In the end, we will reveal their own "secret random" number, add it to the total
               </div>
           </div>
         </section>{/* End Credits */}
+
+        <section className="container mx-auto px-5 py-12 lg:py-7 ">{/* Start Contributors */}
+          <div className="grid gap-4 md:gap-10 lg:grid-cols-3">
+              <div>
+                <h2 className="text-2xl md:text-3xl font-semibold">Contributors</h2>
+              </div>
+              <div className="lg:col-span-2 text-base md:text-lg">
+                <p>
+                dev: <a className="text-red-600" href="https://dpntech.io/" target="_blank" rel="noopener noreferrer">Dmitry</a>
+                <br/>
+                graphics: <a className="text-red-600" href="https://twitter.com/paulricordeau" target="_blank" rel="noopener noreferrer">Paul</a>
+                <br/>
+                lead: <a className="text-red-600" href="https://github.com/adacapital" target="_blank" rel="noopener noreferrer">Thomas</a>
+               </p>
+              </div>
+          </div>
+        </section>{/* End Contributors */}
         
       </main>
   );
