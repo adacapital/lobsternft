@@ -45,7 +45,7 @@ function App() {
                 </div>
               </div>
               <div className="grid justify-items-center">
-                <img className="sm:relative sm:-right-32 md:-right-16 lg:right-0 bottom-0 w-2/3 sm:w-2/4 lg:w-3/5" src={lobsterHappyResource} alt="" />
+                <img className="sm:relative sm:-right-32 md:-right-16 lg:right-0 bottom-0 w-2/3 sm:w-2/4 lg:w-4/5" src={lobsterHappyResource} alt="" />
               </div>
             </div>
           </div>
