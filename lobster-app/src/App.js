@@ -36,8 +36,8 @@ function App() {
                         
                       </div>} */}
                       <div className="flex justify-start space-x-2">
-                      <p className="max-w-sm text-lg md:text-2xl">Thank you for voting, my name is:</p>
                       <h1 className="text-2xl md:text-7xl font-semibold text-red-600">THOMAS</h1>
+                      <p className="max-w-sm text-lg md:text-2xl">is my name!</p>
                       </div>
                     </React.Fragment>
                 }>
