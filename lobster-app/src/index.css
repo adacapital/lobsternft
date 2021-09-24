@@ -1,6 +1,7 @@
 html, body, #root {
     height: 100%;
-    background-color: black;
+    /* background-color: black; */
+    background-color: rgb(24, 24, 24);
 } 
 @tailwind base;
 @tailwind components;

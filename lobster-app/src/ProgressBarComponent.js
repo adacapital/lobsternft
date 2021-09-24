@@ -5,8 +5,12 @@ export function ProgressBarComponent({progress})  {
 
     const indefinite = undefined === progress;
     return (
+    //     <div className={`w-full rounded-full bg-gray-300 h-4 ${indefinite ? "animate-pulse" : ""}`}>
+    //     <div className="rounded-full bg-red-400 h-full transition-all duration-500" 
+    //     style={{width: (progress || 0)+ "%", minWidth: "10px"}} ></div>
+    // </div>
         <div className={`w-full rounded-full bg-gray-300 h-4 ${indefinite ? "animate-pulse" : ""}`}>
-            <div className="rounded-full bg-red-400 h-full transition-all duration-500" 
+            <div className="rounded-full bg-red-700 h-full transition-all duration-500" 
             style={{width: (progress || 0)+ "%", minWidth: "10px"}} ></div>
         </div>
     )
