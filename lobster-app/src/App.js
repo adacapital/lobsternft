@@ -35,10 +35,10 @@ function App() {
                           Thank you all for voting, my name is:  {x.estimatedName}
                         
                       </div>} */}
-                      <div className="flex justify-start space-x-2">
+                      {/* <div className="flex justify-start space-x-2">
                       <h1 className="text-2xl md:text-7xl font-semibold text-red-600">THOMAS</h1>
                       <p className="max-w-sm text-lg md:text-2xl">is my name!</p>
-                      </div>
+                      </div> */}
                     </React.Fragment>
                 }>
                 </NftStatus>
@@ -85,7 +85,7 @@ In the end, we will reveal their own "secret random" number, add it to the total
               </div>
               <div className="lg:col-span-2 text-base md:text-lg">
                 <p>This fun SPA is brought to you by a new SPO!</p>
-                <p>We are an independent Cardano Stake Pool Operator and we are on a mission to run, educate, build and grow the Earth’s most advanced, 3rd generation blockchain platform, one node at a time…</p>
+                <p>We are an independent Cardano Stake Pool Operator and we are on a mission to run, educate, build and grow the Earth’s most advanced, 3rd generation blockchain platform.</p>
                 <br/>
                 <p>Our ticker: <h2 className="text-2xl md:text-3xl font-semibold text-red-600">ADACT</h2>
                 <br/>
