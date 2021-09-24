@@ -56,7 +56,7 @@ function App() {
           </div> */}
         </div>{/* End Hero */}
 
-        <section className="container mx-auto px-5 py-12 lg:py-14 ">{/* Start About App */}
+        <section className="container mx-auto px-5 py-12 lg:py-7 ">{/* Start About App */}
           <div className="grid gap-4 md:gap-10 lg:grid-cols-3">
             <div>
               <h2 className="text-2xl md:text-3xl font-semibold">How to contribute to LobsterNFT</h2>
@@ -78,7 +78,7 @@ In the end, we will reveal their own "secret random" number, add it to the total
           </div>
         </section>{/* End About App */}
         
-        <section className="container mx-auto px-5 py-12 lg:py-14 ">{/* Start Credits */}
+        <section className="container mx-auto px-5 py-12 lg:py-7 ">{/* Start Credits */}
           <div className="grid gap-4 md:gap-10 lg:grid-cols-3">
               <div>
                 <h2 className="text-2xl md:text-3xl font-semibold">Credits</h2>
