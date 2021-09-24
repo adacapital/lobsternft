@@ -1,6 +1,7 @@
 # Lobster Challenge one-page website
 
 <img alt=“lobsternft.io” src=“https://lobsternft.io/summary_image3.png”>
+[<img alt="lobsternft.io" width="40px" src="lobster-app/public/summary_image3.png" />]
 
 Every lobster should have a name. Would you agree?
 
