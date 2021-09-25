@@ -35,7 +35,7 @@ function App() {
                           Thank you all for voting, my name is:  {x.estimatedName}
                         
                       </div>} */}
-                      {x.estimatedName && <div className="flex justify-start space-x-2">
+                      {x.estimatedName !== "null" && <div className="flex justify-start space-x-2">
                       <h1 className="text-2xl md:text-7xl font-semibold text-red-600">{x.estimatedName}</h1>
                       <p className="max-w-sm text-lg md:text-2xl">is my name!</p>
                       </div>}
