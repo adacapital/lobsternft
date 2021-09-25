@@ -1,0 +1,1 @@
+insert into lobster (time, lobster_counter, lobster_votes, name) values("#TIME", #LOBSTER_COUNTER, #LOBSTER_VOTES, #NAME);
