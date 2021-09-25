@@ -14,8 +14,8 @@ RAW=$($SPOT_PATH/scripts/query_payment_addr.sh addr1w8433zk2shufk42hn4x7zznjjuqw
 LOBSTER_COUNTER=$(echo $RAW | awk '{ print $9 }')
 LOBSTER_VOTES=$(echo $RAW | awk '{ print $12 }')
 
-LOBSTER_COUNTER=24824
-LOBSTER_VOTES=500
+# LOBSTER_COUNTER=24824
+# LOBSTER_VOTES=500
 
 echo "RAW: $RAW"
 echo "LOBSTER_COUNTER: $LOBSTER_COUNTER"
