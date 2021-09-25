@@ -27,7 +27,8 @@ export class NftStatus extends React.Component  {
             .then(r => r.json())
             .then(json =>  {
                         console.log(`fetch received: ${JSON.stringify(json)}`);
-                        this.setState({response: json, estimatedName:json.estimatedResult?.name });
+                        // this.setState({response: json, estimatedName:json.estimatedResult?.name });
+                        this.setState({response: json, estimatedName:json.name });
                     }, 
                     reason => {
                         console.error("Failed to fetch: " + reason);
@@ -54,10 +55,14 @@ export class NftStatus extends React.Component  {
 
     render = () => <>
                 <>
+                {/* {this.props.render({
+                    progress: this.state?.response?.progressPct,
+                    progressDisplay: this.state?.response?.ratioDisplay,
+                    estimatedName: this.state?.response?.estimatedResult?.name})} */}
                 {this.props.render({
                     progress: this.state?.response?.progressPct,
                     progressDisplay: this.state?.response?.ratioDisplay,
-                    estimatedName: this.state?.response?.estimatedResult?.name})}
+                    estimatedName: this.state?.response?.name})}
                 </>
             </>
 }
