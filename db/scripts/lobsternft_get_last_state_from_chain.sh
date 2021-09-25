@@ -24,7 +24,7 @@ echo "LOBSTER_VOTES: $LOBSTER_VOTES"
 if [[ $LOBSTER_VOTES > 500 ]]; then
     NAME_INDEX=$(expr $LOBSTER_COUNTER % 1219)
     NAME_INDEX=$(expr $NAME_INDEX + 1)
-    NAME=$(tail +$NAME_INDEX $SCRIPT_DIR/names.txt | head -1 | awk '{print $2}')
+    NAME="$(tail +$NAME_INDEX $SCRIPT_DIR/names.txt | head -1 | awk '{print $2}')"
 
     INS_SQL=$(cat $SQL_DIR/lobster_db_insert_new_with_name.sql)
     INS_SQL=$(echo $INS_SQL | sed "s/#TIME/$NOW/g" | sed "s/#LOBSTER_COUNTER/$LOBSTER_COUNTER/g" | sed "s/#LOBSTER_VOTES/$LOBSTER_VOTES/g" | sed "s/#NAME/$NAME/g")
