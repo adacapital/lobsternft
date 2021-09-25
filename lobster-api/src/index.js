@@ -44,7 +44,11 @@ app.get("/voting-status", (req,res,next)=> {
         } else {
             const row = rows[0];
             console.log("row" + row.lobster_votes + "," + row.name + " ,END");
-            res.status(200).json({progressPct: 100*(row.lobster_votes / NFT_VOTES_TARGET), ratioDisplay: `${row.lobster_votes}/${NFT_VOTES_TARGET}`, name: `${row.name}`});
+            if (row.name===null) {
+                res.status(200).json({progressPct: 100*(row.lobster_votes / NFT_VOTES_TARGET), ratioDisplay: `${row.lobster_votes}/${NFT_VOTES_TARGET}`});    
+            } else {
+                res.status(200).json({progressPct: 100*(row.lobster_votes / NFT_VOTES_TARGET), ratioDisplay: `${row.lobster_votes}/${NFT_VOTES_TARGET}`, name: `${row.name}`});
+            }
         }
     })
     
