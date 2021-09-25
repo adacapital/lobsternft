@@ -1,5 +1,6 @@
 {
     "db": {
-        "path": "./data/test.db"
+        // "path": "./data/test.db"
+        "path": "../db/lobster.db"
     }     
 }
