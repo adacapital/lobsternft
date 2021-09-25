@@ -22,6 +22,7 @@ export class NftStatus extends React.Component  {
     }
 
     startPoll() {
+        console.log(">startPoll, POLL_DELAY: " + POLL_DELAY)
         if (POLL_DELAY>0) {
             this.setIntervalLazy(() => 
             fetch(apiUrl)
