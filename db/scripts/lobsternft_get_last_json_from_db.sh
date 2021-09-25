@@ -16,7 +16,7 @@ LOBSTER_VOTES=501
 
 if [[ $LOBSTER_VOTES > 500 ]]; then
     echo "here"
-    NAME_INDEX=$($LOBSTER_COUNTER % 1219)
+    NAME_INDEX=$(expr $LOBSTER_COUNTER % 1219)
     NAME_INDEX=$(expr $NAME_INDEX + 1)
     NAME=$(tail +$NAME_INDEX $SCRIPT_DIR/names.txt | head -1)
 
