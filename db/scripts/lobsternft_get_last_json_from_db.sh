@@ -11,8 +11,11 @@ TIME=$(echo $LAST | awk -F"|" '{print $2}')
 LOBSTER_COUNTER=$(echo $LAST | awk -F"|" '{print $3}')
 LOBSTER_VOTES=$(echo $LAST | awk -F"|" '{print $4}')
 
+LOBSTER_COUNTER=24824
+LOBSTER_VOTES=501
 
 if [[ $LOBSTER_VOTES > 500 ]]; then
+    echo "here"
     NAME_INDEX=$($LOBSTER_COUNTER % 1219)
     NAME_INDEX=$(expr $NAME_INDEX + 1)
     NAME=$(tail +$NAME_INDEX $SCRIPT_DIR/names.txt | head -1)
