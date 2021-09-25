@@ -25,7 +25,7 @@ if [[ $LOBSTER_VOTES > 500 ]]; then
     "time": "${TIME}", 
     "lobster_counter": ${LOBSTER_COUNTER},
     "lobster_votes": ${LOBSTER_VOTES},
-    "name": ${NAME}
+    "name": "${NAME}"
 }
 END
 )
