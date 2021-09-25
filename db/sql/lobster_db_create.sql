@@ -1,1 +1,1 @@
-create table lobster (id INTEGER PRIMARY KEY AUTOINCREMENT, time TEXT, lobster_counter INTEGER, lobster_votes INTEGER);
+create table lobster (id INTEGER PRIMARY KEY AUTOINCREMENT, time TEXT, lobster_counter INTEGER, lobster_votes INTEGER, name CHAR(50));
