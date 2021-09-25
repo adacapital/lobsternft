@@ -22,20 +22,22 @@ export class NftStatus extends React.Component  {
     }
 
     startPoll() {
-        this.setIntervalLazy(() => 
-        fetch(apiUrl)
-            .then(r => r.json())
-            .then(json =>  {
-                        console.log(`fetch received: ${JSON.stringify(json)}`);
-                        // this.setState({response: json, estimatedName:json.estimatedResult?.name });
-                        this.setState({response: json, estimatedName:json.name });
-                    }, 
-                    reason => {
-                        console.error("Failed to fetch: " + reason);
-                        this.setState({error: reason})
-                    })
-            .then(_ => POLL_DELAY)
-        , 10);
+        if (POLL_DELAY>0) {
+            this.setIntervalLazy(() => 
+            fetch(apiUrl)
+                .then(r => r.json())
+                .then(json =>  {
+                            console.log(`fetch received: ${JSON.stringify(json)}`);
+                            // this.setState({response: json, estimatedName:json.estimatedResult?.name });
+                            this.setState({response: json, estimatedName:json.name });
+                        }, 
+                        reason => {
+                            console.error("Failed to fetch: " + reason);
+                            this.setState({error: reason})
+                        })
+                .then(_ => POLL_DELAY)
+            , 10);
+        }
     }
 
     stopPoll() { 
