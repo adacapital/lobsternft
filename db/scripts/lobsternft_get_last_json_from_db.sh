@@ -10,6 +10,7 @@ ID=$(echo $LAST | awk -F"|" '{print $1}')
 TIME=$(echo $LAST | awk -F"|" '{print $2}')
 LOBSTER_COUNTER=$(echo $LAST | awk -F"|" '{print $3}')
 LOBSTER_VOTES=$(echo $LAST | awk -F"|" '{print $4}')
+NAME=$(echo $LAST | awk -F"|" '{print $5}')
 
 # LOBSTER_COUNTER=24824
 # LOBSTER_VOTES=501
