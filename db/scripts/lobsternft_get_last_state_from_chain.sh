@@ -35,5 +35,5 @@ fi
 
 echo "INS_SQL: $INS_SQL" 
 
-# echo $INS_SQL | sqlite3 $DB_DIR/lobster.db
+echo $INS_SQL | sqlite3 $DB_DIR/lobster.db
 
