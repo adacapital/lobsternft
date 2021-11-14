@@ -10,7 +10,7 @@ https://github.com/input-output-hk/lobster-challenge.
 
 ## Frontend (lobster-app)
 
-Frontend is a react app, see [README](./lobsster-app/README.md).
+Frontend is a react app, see [README](./lobster-app/README.md).
 
 Configuration is via `.env` files.
 * `REACT_APP_API_URL` is a get URL for polling

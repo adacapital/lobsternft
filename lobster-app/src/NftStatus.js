@@ -22,19 +22,23 @@ export class NftStatus extends React.Component  {
     }
 
     startPoll() {
-        this.setIntervalLazy(() => 
-        fetch(apiUrl)
-            .then(r => r.json())
-            .then(json =>  {
-                        console.log(`fetch received: ${JSON.stringify(json)}`);
-                        this.setState({response: json, estimatedName:json.estimatedResult?.name });
-                    }, 
-                    reason => {
-                        console.error("Failed to fetch: " + reason);
-                        this.setState({error: reason})
-                    })
-            .then(_ => POLL_DELAY)
-        , 10);
+        console.log(">startPoll, POLL_DELAY: " + POLL_DELAY)
+        if (POLL_DELAY>0) {
+            this.setIntervalLazy(() => 
+            fetch(apiUrl)
+                .then(r => r.json())
+                .then(json =>  {
+                            console.log(`fetch received: ${JSON.stringify(json)}`);
+                            // this.setState({response: json, estimatedName:json.estimatedResult?.name });
+                            this.setState({response: json, estimatedName:json.name });
+                        }, 
+                        reason => {
+                            console.error("Failed to fetch: " + reason);
+                            this.setState({error: reason})
+                        })
+                .then(_ => POLL_DELAY)
+            , 10);
+        }
     }
 
     stopPoll() { 
@@ -54,10 +58,14 @@ export class NftStatus extends React.Component  {
 
     render = () => <>
                 <>
+                {/* {this.props.render({
+                    progress: this.state?.response?.progressPct,
+                    progressDisplay: this.state?.response?.ratioDisplay,
+                    estimatedName: this.state?.response?.estimatedResult?.name})} */}
                 {this.props.render({
                     progress: this.state?.response?.progressPct,
                     progressDisplay: this.state?.response?.ratioDisplay,
-                    estimatedName: this.state?.response?.estimatedResult?.name})}
+                    estimatedName: this.state?.response?.name})}
                 </>
             </>
 }

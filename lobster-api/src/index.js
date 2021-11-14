@@ -43,7 +43,12 @@ app.get("/voting-status", (req,res,next)=> {
             res.status(404).json({err: "no data available"});
         } else {
             const row = rows[0];
-            res.status(200).json({progressPct: 100*(row.lobster_votes / NFT_VOTES_TARGET), ratioDisplay: `${row.lobster_votes}/${NFT_VOTES_TARGET}`});
+            console.log("row" + row.lobster_votes + "," + row.name + " ,END");
+            if (row.name===null) {
+                res.status(200).json({progressPct: 100*(row.lobster_votes / NFT_VOTES_TARGET), ratioDisplay: `${row.lobster_votes}/${NFT_VOTES_TARGET}`});    
+            } else {
+                res.status(200).json({progressPct: 100*(row.lobster_votes / NFT_VOTES_TARGET), ratioDisplay: `${row.lobster_votes}/${NFT_VOTES_TARGET}`, name: `${row.name}`});
+            }
         }
     })
     
