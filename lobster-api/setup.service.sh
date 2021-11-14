@@ -24,7 +24,7 @@ KillSignal=SIGINT
 RestartKillSignal=SIGINT
 TimeoutStopSec=2
 SuccessExitStatus=143
-SyslogIdentifier=run.relay
+SyslogIdentifier=run.lobsternft
 
 [Install]
 WantedBy=multi-user.target
