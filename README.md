@@ -1,6 +1,6 @@
 # Lobster Challenge one-page website
 
-[<img alt="lobsternft.io" src="lobster-app/public/summary_image3.png" />](https://lobsternft.io)({:target="_blank"})
+[<img alt="lobsternft.io" src="lobster-app/public/summary_image3.png" />](https://lobsternft.io)
 
 This single page website's intent is to promote one of the first toy smartcontract created on the Cardano blockchain.
 
